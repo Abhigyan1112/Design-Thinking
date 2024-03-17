@@ -16,6 +16,30 @@
     ></script>
     <title>Hostel Management/permission</title>
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      
+      .bgImage {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Adjust height as needed */
+            background-image: url('hostel_management4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency here */
+        }
         body {
           font-family: Arial, sans-serif;
           margin: 0;
@@ -67,88 +91,94 @@
       </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Hostel Complaint Management</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Hostel Complaint Management</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Notification<span
+                class="position-absolute top-3 start-2 translate-middle badge rounded-pill bg-danger"
+              >
+                9+
+                <span class="visually-hidden">unread messages</span>
+              </span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Complaint
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="complaint.html">Complaint</a></li>
+              <li><a class="dropdown-item" href="status.html">Complaint Status</a></li>
+              <!-- <li><hr class="dropdown-divider" /></li> -->
+              <li>
+                <a class="dropdown-item" href="permission.html">Permission</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  >Notification<span
-                    class="position-absolute top-3 start-2 translate-middle badge rounded-pill bg-danger"
-                  >
-                    9+
-                    <span class="visually-hidden">unread messages</span>
-                  </span></a
-                >
+              <li>
+                <a class="dropdown-item" href="application.html">Application</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Complaint
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Complaint</a></li>
-                  <li><a class="dropdown-item" href="#">Permission</a></li>
-                  <!-- <li><hr class="dropdown-divider" /></li> -->
-                  <li>
-                    <a class="dropdown-item" href="#">Complaint Status</a>
-                  </li>
-                  <li class="dropdown-item" href="#">Application</li>
-                  <li class="dropdown-item" href="#">Concern</li>
-                </ul>
+              <li>
+                <a class="dropdown-item" href="concern.html">Concern</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link">Contact Us</a>
-              </li>
+
             </ul>
-            <button class="btn btn-outline-success" type="submit" style="margin-right: 10px; background-color: rgb(244, 242, 152);">
-                Login
-              </button>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success" type="submit" style="margin-right: 10px; background-color: rgb(244, 242, 152);" >
+          <a class="nav-link" href="login.html">Login</a>
+          </button>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
+     <div class="bgImage">
       <div class="container">
         <h2>Permission Form</h2>
         <form id="permissionForm">
             <div class="form-group">
-            <label for="reason">Reason:</label>
+            <label for="reason">Related:</label>
             <select id="reason" name="reason" required>
                 <option value="">Select a reason</option>
-                <option value="Personal">Personal</option>
+                <option value="Personal">Come from home</option>
                 <option value="Medical">Medical</option>
                 <option value="Family">Family</option>
-                <option value="Work-related">Work-related</option>
+                <option value="Work-related">Train</option>
                 <option value="Other">Other</option>
               </select>
           </div>
@@ -161,14 +191,14 @@
             <input type="time" id="time" name="time" required>
           </div>
           <div class="form-group">
-            <label for="complaint">Complaint:</label>
+            <label for="complaint">Resion:</label>
             <textarea id="related" name="related" required></textarea>
           </div>
           <div class="form-group">
-            <button type="submit">Submit</button>
+            <button type="submit" href="index.html">Submit</button>
           </div>
         </form>
       </div>
-    
+    </div>
 </body>
 </html>
