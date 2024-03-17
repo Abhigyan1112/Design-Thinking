@@ -18,7 +18,32 @@
     <title>Contact Us</title>
 
     <style>
+      *{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: sans-serif;
+      }
+      
+      .bgImage {
+            position: relative;
+            width: 100%;
+            height: 100vh; /* Adjust height as needed */
+            background-image: url('hostel_management4.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+        }
+        .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.5); /* Adjust transparency here */
+        }
       /* Custom CSS for footer */
+
       footer {
           background-color: #343a40;
           color: white;
@@ -37,82 +62,86 @@
   </style>
 </head>
 <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">Hostel Complaint Management</a>
-          <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarSupportedContent"
-            aria-controls="navbarSupportedContent"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div class="collapse navbar-collapse" id="navbarSupportedContent">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div class="container-fluid">
+      <a class="navbar-brand" href="#">Hostel Complaint Management</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#"
+              >Notification<span
+                class="position-absolute top-3 start-2 translate-middle badge rounded-pill bg-danger"
+              >
+                9+
+                <span class="visually-hidden">unread messages</span>
+              </span></a
+            >
+          </li>
+          <li class="nav-item dropdown">
+            <a
+              class="nav-link dropdown-toggle"
+              href="#"
+              role="button"
+              data-bs-toggle="dropdown"
+              aria-expanded="false"
+            >
+              Complaint
+            </a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="complaint.html">Complaint</a></li>
+              <li><a class="dropdown-item" href="status.html">Complaint Status</a></li>
+              <!-- <li><hr class="dropdown-divider" /></li> -->
+              <li>
+                <a class="dropdown-item" href="permission.html">Permission</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link" href="#"
-                  >Notification<span
-                    class="position-absolute top-3 start-2 translate-middle badge rounded-pill bg-danger"
-                  >
-                    9+
-                    <span class="visually-hidden">unread messages</span>
-                  </span></a
-                >
+              <li>
+                <a class="dropdown-item" href="application.html">Application</a>
               </li>
-              <li class="nav-item dropdown">
-                <a
-                  
-                  class="nav-link dropdown-toggle"
-                  href="#"
-                  role="button"
-                  data-bs-toggle="dropdown"
-                  aria-expanded="false"
-                >
-                  Complaint
-                </a>
-                <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Mess</a></li>
-                  <li><a class="dropdown-item" href="#">Room</a></li>
-                  <!-- <li><hr class="dropdown-divider" /></li> -->
-                  <li>
-                    <a class="dropdown-item" href="#">Washroom</a>
-                  </li>
-                  <li class="dropdown-item" href="#">Security</li>
-                  <li class="dropdown-item" href="#">Others</li>
-                </ul>
+              <li>
+                <a class="dropdown-item" href="concern.html">Concern</a>
               </li>
-              <li class="nav-item">
-                <a class="nav-link open-window" >Contact Us</a>
-              </li>
+
             </ul>
-            <button class="btn btn-outline-success" type="submit" style="margin-right: 10px; background-color: rgb(244, 242, 152);">
-                Login
-              </button>
-            <form class="d-flex" role="search">
-              <input
-                class="form-control me-2"
-                type="search"
-                placeholder="Search"
-                aria-label="Search"
-              />
-              <button class="btn btn-outline-success" type="submit">
-                Search
-              </button>
-            </form>
-          </div>
-        </div>
-      </nav>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact Us</a>
+          </li>
+        </ul>
+        <button class="btn btn-outline-success" type="submit" style="margin-right: 10px; background-color: rgb(244, 242, 152);" >
+          <a class="nav-link" href="login.html">Login</a>
+          </button>
+        <form class="d-flex" role="search">
+          <input
+            class="form-control me-2"
+            type="search"
+            placeholder="Search"
+            aria-label="Search"
+          />
+          <button class="btn btn-outline-success" type="submit">
+            Search
+          </button>
+        </form>
+      </div>
+    </div>
+  </nav>
 
      
 
-    
+    <div class="bgImage">
     <div class="container" style="margin: 20px auto; height:450px; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display:grid; grid-template-columns:700px 600px">
         <div style="margin:40px;"><h3>Contacts</h3>
             <div style="color:blue;">+91-8378372832</div>
@@ -127,7 +156,7 @@
             <div style="color:blue;">elrahid@gmail.com</div>
         </div>
     </div>
-    
+    </div>
     <footer style="padding: 20px 0; margin-top: 20px;">
       <div class="container">
           <div class="row">
@@ -148,6 +177,7 @@
               </div>
           </div>
       </div>
+    
   </footer>
   
 
