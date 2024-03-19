@@ -93,33 +93,26 @@
     <div class="container d-flex justify-content-center align-items-center" style="height: 100vh;">
         <div style="width: 80%; max-width: 600px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); padding: 20px;">
             <h1 style="color: #333; margin-bottom: 20px;">Complaints</h1>
-            <form action="submit_complaint.php" method="POST">
+            <form action="https://docs.google.com/forms/u/0/d/e/1FAIpQLSeNMpFzZa9jC-HNUbb-_4pPOX9tqY6rEdHsfbT-qJPewRNSjg/formResponse" method="POST">
                 <div style="margin-bottom: 20px;">
-                    <label for="complaint" style="color: #333; font-weight: bold;">Type of Complaint:</label><br>
-                    <select id="complaint" name="complaint" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;">
-                        <option value="">Select</option>
-                        <option value="Mess">Mess</option>
-                        <option value="Room">Room</option>
-                        <option value="Washroom">Washroom</option>
-                        <option value="Security">Security</option>
-                        <option value="Others">Others</option>
-                    </select>
+                    <label for="complaint" style="color: #333; font-weight: bold;">Complaint type:</label><br>
+                    <input type="text" id="complainant" name="entry.26204427" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;">
                 </div>
                 <div style="margin-bottom: 20px;">
                     <label for="complainant" style="color: #333; font-weight: bold;">Your Name:</label><br>
-                    <input type="text" id="complainant" name="complainant" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;">
+                    <input type="text" id="complainant" name="entry.1823741934" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;">
                 </div>
                 <div style="margin-bottom: 20px;">
                     <label for="room" style="color: #333; font-weight: bold;">Your Room No:</label><br>
-                    <input type="text" id="room" name="room" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;">
+                    <input type="text" id="room" name="entry.1034607339" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;">
                 </div>
                 <div style="margin-bottom: 20px;">
                     <label for="contact" style="color: #333; font-weight: bold;">Your Contact No:</label><br>
-                    <input type="text" id="contact" name="contact" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;">
+                    <input type="text" id="contact" name="entry.546543936" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;">
                 </div>
                 <div style="margin-bottom: 20px;">
                     <label for="complaint_text" style="color: #333; font-weight: bold;">Your Complaint:</label><br>
-                    <textarea id="complaint_text" name="complaint_text" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;"></textarea>
+                    <textarea id="complaint_text" name="entry.1643114714" rows="5" required style="width: 100%; padding: 10px; border: 1px solid #ccc; border-radius: 5px; background-color: #fff;"></textarea>
                 </div>
                 <button type="submit" style="width: 20%; padding: 10px 20px; background-color: #05ddcb; color: #fff; border: none; border-radius: 5px; cursor: pointer;">Submit</button>
             </form>
