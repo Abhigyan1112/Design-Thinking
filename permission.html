@@ -14,6 +14,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="logof.png" type="image/x-icon">
     <title>Hostel Management/permission</title>
     <style>
       *{
@@ -22,7 +23,10 @@
         box-sizing: border-box;
         font-family: sans-serif;
       }
-      
+      .nav-item.dropdown .nav-link {
+          background-color: #ea9797 !important; /* Change to your desired color */
+          border-radius: 20px;
+      }
       .bgImage {
             position: relative;
             width: 100%;
@@ -93,7 +97,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Hostel Complaint Management</a>
+      <a class="navbar-brand" href="#">HostelEaze</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -111,8 +115,8 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              >Notification<span
+            <a class="nav-link" href="#" style="margin-right: 10px;"
+              ><img src="notification.png" style="height: 25px;"><span
                 class="position-absolute top-3 start-2 translate-middle badge rounded-pill bg-danger"
               >
                 9+
@@ -147,12 +151,9 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html"><img src="call.png" style="height: 25px; margin-right: 5px;">Contact Us</a>
           </li>
         </ul>
-        <button class="btn btn-outline-success" type="submit" style="margin-right: 10px; background-color: rgb(244, 242, 152);" >
-          <a class="nav-link" href="login.html">Login</a>
-          </button>
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
@@ -167,7 +168,7 @@
       </div>
     </div>
   </nav>
-     <div class="bgImage">
+     <div class="bgImage" style="padding-top: 30px;">
       <div class="container">
         <h2>Permission Form</h2>
         <form id="permissionForm">
@@ -191,14 +192,32 @@
             <input type="time" id="time" name="time" required>
           </div>
           <div class="form-group">
-            <label for="complaint">Resion:</label>
+            <label for="complaint">Reason:</label>
             <textarea id="related" name="related" required></textarea>
           </div>
           <div class="form-group">
-            <button type="submit" href="index.html">Submit</button>
+            <button type="submit" onclick="location.href='./index.html'">Submit</button>
           </div>
         </form>
       </div>
     </div>
+    <footer style="padding: 20px; margin-top: 20px; background-color: #333; color: white;">
+      <div class="container1" style="margin-left: 10rem;">
+          <div class="row">
+              <div class="col-md-6">
+                  <h5>Contact Us</h5>
+                  <p>Email: contact@example.com</p>
+                  <p>Phone: +1 234 567 890</p>
+                  <p>Address: 123 Street, City, Country</p>
+              </div>
+              <div class="col-md-6">
+                  <h5>Feedback</h5>
+                  <p>We value your feedback!</p>
+                  <a href="#" class="btn btn-primary">Leave Feedback</a>
+              </div>
+          </div>
+      </div>
+    </footer>
 </body>
+
 </html>
