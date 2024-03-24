@@ -14,7 +14,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
-   
+    <link rel="shortcut icon" href="logof.png" type="image/x-icon">
     <title>Contact Us</title>
 
     <style>
@@ -24,7 +24,10 @@
         box-sizing: border-box;
         font-family: sans-serif;
       }
-      
+       .contact {
+          background-color: #ea9797 !important; /* Change to your desired color */
+           border-radius: 20px;
+      } 
       .bgImage {
             position: relative;
             width: 100%;
@@ -62,100 +65,124 @@
   </style>
 </head>
 <body>
-  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
-    <div class="container-fluid">
-      <a class="navbar-brand" href="#">Hostel Complaint Management</a>
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-bs-toggle="collapse"
-        data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="index.html">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#"
-              >Notification<span
-                class="position-absolute top-3 start-2 translate-middle badge rounded-pill bg-danger"
+  <div class="bgImage">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#">HostelEaze</a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#" style="margin-right: 10px;"
+                ><img src="notification.png" style="height: 25px;"><span
+                  class="position-absolute top-3 start-2 translate-middle badge rounded-pill bg-danger"
+                >
+                  9+
+                  <span class="visually-hidden">unread messages</span>
+                </span></a
               >
-                9+
-                <span class="visually-hidden">unread messages</span>
-              </span></a
-            >
-          </li>
-          <li class="nav-item dropdown">
-            <a
-              class="nav-link dropdown-toggle"
-              href="#"
-              role="button"
-              data-bs-toggle="dropdown"
-              aria-expanded="false"
-            >
-              Complaint
-            </a>
-            <ul class="dropdown-menu">
-              <li><a class="dropdown-item" href="complaint.html">Complaint</a></li>
-              <li><a class="dropdown-item" href="status.html">Complaint Status</a></li>
-              <!-- <li><hr class="dropdown-divider" /></li> -->
-              <li>
-                <a class="dropdown-item" href="permission.html">Permission</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="application.html">Application</a>
-              </li>
-              <li>
-                <a class="dropdown-item" href="concern.html">Concern</a>
-              </li>
-
-            </ul>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
-          </li>
-        </ul>
-        <button class="btn btn-outline-success" type="submit" style="margin-right: 10px; background-color: rgb(244, 242, 152);" >
-          <a class="nav-link" href="login.html">Login</a>
-          </button>
-        <form class="d-flex" role="search">
-          <input
-            class="form-control me-2"
-            type="search"
-            placeholder="Search"
-            aria-label="Search"
-          />
-          <button class="btn btn-outline-success" type="submit">
-            Search
-          </button>
-        </form>
+            </li>
+            <li class="nav-item dropdown">
+              <a
+                class="nav-link dropdown-toggle"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                aria-expanded="false"
+              >
+                Complaint
+              </a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="complaint.html">Complaint</a></li>
+                <li><a class="dropdown-item" href="status.html">Complaint Status</a></li>
+                <!-- <li><hr class="dropdown-divider" /></li> -->
+                <li>
+                  <a class="dropdown-item" href="permission.html">Permission</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="application.html">Application</a>
+                </li>
+                <li>
+                  <a class="dropdown-item" href="concern.html">Concern</a>
+                </li>
+  
+              </ul>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contact.html"><img src="call.png" style="height: 25px; margin-right: 5px;">Contact Us</a>
+            </li>
+          </ul>
+          <form class="d-flex" role="search">
+            <input
+              class="form-control me-2"
+              type="search"
+              placeholder="Search"
+              aria-label="Search"
+            />
+            <button class="btn btn-outline-success" type="submit">
+              Search
+            </button>
+          </form>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
 
      
 
-    <div class="bgImage">
-    <div class="container" style="margin: 20px auto; height:450px; padding: 20px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display:grid; grid-template-columns:700px 600px">
-        <div style="margin:40px;"><h3>Contacts</h3>
+   
+      <div class="container" style="margin: 20px auto; margin-top:100px; padding: 20px; height: 400px; background-color: #f8f9fa; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); display:grid; grid-template-columns:400px 400px 400px">
+        <div style="margin:40px;">
+            <h3>Contacts</h3>
             <div style="color:blue;">+91-8378372832</div>
             <div style="color:blue;">+91-3849383289</div>
             <div style="color:blue;">+91-3894923843</div>
-            <div style="color:blue;">+91-3948782934</div>
+            <div style="margin-bottom:20px; color:blue;">+91-3948782934</div>
+            <h3>Address</h3>
+            <p>Sarojini Naidu Girl's Hostel,</p>
+            <p>Indore,Madhya Pradesh - 425003</p>
         </div>
-        <div style="margin:40px"><h3>Gmail</h3>
+        <div style="display: flex; align-items: center;">
+            <div style=" background-color:  #ea9797; height:300px; display: flex; align-items: center; border-radius:20px;">
+                <div>
+                  If you would like to start a live chat, Click
+                </div>
+                <div>
+                    <button class="live-chat-button">Start Here</button>
+                </div>
+            </div>
+        </div>
+        <div style="margin:40px">
+            <h3>Gmail</h3>
             <div style="color:blue;">xvdfj@gmail.com</div>
             <div style="color:blue;">elrahid@gmail.com</div>
             <div style="color:blue;">xvdfj@gmail.com</div>
-            <div style="color:blue;">elrahid@gmail.com</div>
+            <div style="margin-bottom:20px; color:blue;">elrahid@gmail.com</div>
+            <h3>Social Media</h3>
+            <div>
+                <a href="#" style="color: blue; text-decoration: none;">Facebook</a>
+            </div>
+            <div>
+                <a href="#" style="color: blue; text-decoration: none;">Twitter</a>
+            </div>
+            <div>
+                <a href="#" style="color: blue; text-decoration: none;">Instagram</a>
+            </div>
         </div>
     </div>
+    
     </div>
     <footer style="padding: 20px 0; margin-top: 20px;">
       <div class="container">
