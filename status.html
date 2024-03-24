@@ -14,6 +14,7 @@
       integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL"
       crossorigin="anonymous"
     ></script>
+    <link rel="shortcut icon" href="logof.png" type="image/x-icon">
     <title>Hostel Management/status</title>
     <style>
     *{
@@ -21,6 +22,10 @@
         padding: 0;
         box-sizing: border-box;
         font-family: sans-serif;
+      }
+      .nav-item.dropdown .nav-link {
+          background-color: #ea9797 !important; /* Change to your desired color */
+          border-radius: 20px;
       }
       .bgImage {
             position: relative;
@@ -53,6 +58,7 @@
             border-radius: 10px;
             box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
         }
+        
         h1 {
             text-align: center;
             color: #333;
@@ -88,7 +94,7 @@
 <body>
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-      <a class="navbar-brand" href="#">Hostel Complaint Management</a>
+      <a class="navbar-brand" href="#">HostelEaze</a>
       <button
         class="navbar-toggler"
         type="button"
@@ -106,8 +112,8 @@
             <a class="nav-link active" aria-current="page" href="index.html">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="#"
-              >Notification<span
+            <a class="nav-link" href="#" style="margin-right: 10px;"
+              ><img src="notification.png" style="height: 25px;"><span
                 class="position-absolute top-3 start-2 translate-middle badge rounded-pill bg-danger"
               >
                 9+
@@ -142,12 +148,9 @@
             </ul>
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="contact.html">Contact Us</a>
+            <a class="nav-link" href="contact.html"><img src="call.png" style="height: 25px; margin-right: 5px;">Contact Us</a>
           </li>
         </ul>
-        <button class="btn btn-outline-success" type="submit" style="margin-right: 10px; background-color: rgb(244, 242, 152);" >
-          <a class="nav-link" href="login.html">Login</a>
-          </button>
         <form class="d-flex" role="search">
           <input
             class="form-control me-2"
@@ -162,7 +165,7 @@
       </div>
     </div>
   </nav>
-   <div class="bgImage">
+   <div class="bgImage" style="padding-top: 30px;">
       <div class="container">
         <h1>Complaint Status</h1>
         <table>
@@ -210,4 +213,21 @@
     </div>
   </div>
 </body>
+<footer style="padding: 20px 0; margin-top: 20px; background-color: #333; color: white;">
+  <div class="container1" style="margin-left: 10rem;">
+      <div class="row">
+          <div class="col-md-6">
+              <h5>Contact Us</h5>
+              <p>Email: contact@example.com</p>
+              <p>Phone: +1 234 567 890</p>
+              <p>Address: 123 Street, City, Country</p>
+          </div>
+          <div class="col-md-6">
+              <h5>Feedback</h5>
+              <p>We value your feedback!</p>
+              <a href="#" class="btn btn-primary">Leave Feedback</a>
+          </div>
+      </div>
+  </div>
+</footer>
 </html>
